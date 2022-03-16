@@ -42,13 +42,18 @@ a {
   margin-bottom: 48px;
   padding: 20px 0;
 }
+.body__image {
+  display: flex;
+}
 .topimage {
   width: 30%;
   margin-left: 70px;
 }
 .introduce {
   width: 50%;
-  margin-left: 600px;
+  height: 50%;
+  margin-left: 50px;
+  margin-top: 50px;
 } 
 .inner {
   width: 1024px;
