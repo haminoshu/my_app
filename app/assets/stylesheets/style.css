@@ -77,7 +77,7 @@ a {
 }
 .nav__btn{
   display: inline-block;
-  padding: 0.4em 1.6em;
+  padding: 0.4em 0.4em 0.6em 2.2em;
   font-size: 1.2em;
   /* color: #8a5506; */
   text-decoration: none;
@@ -89,6 +89,7 @@ a {
 .nav__btn:hover{
   color: #fff;
   background: #dbdd65;
+  margin-right: 10px;
 }
 
 .nav__logout{
