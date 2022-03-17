@@ -75,6 +75,19 @@ a {
   width: 160px;
   margin-top: 10px;
 }
+.body__bottom {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom_image {
+  width: 25%;
+  margin-top: 100px;
+}
+.job_guide {
+  width: 60%;
+  margin-top: 100px;
+  margin-left: 250px;
+}
 .nav__btn{
   display: inline-block;
   padding: 0.4em 0.4em 0.6em 2.2em;
