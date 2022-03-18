@@ -144,11 +144,12 @@ a {
 }
 
 .field{
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 
 .actions{
   margin-bottom: 40px;
+  margin-left: 20px;
 }
 
 .form__btn{

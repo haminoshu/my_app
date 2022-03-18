@@ -56,7 +56,7 @@ class AvatarsController < ApplicationController
 
   private
   def avatar_params
-    params.require(:avatar).permit(:title, :catch_copy, :concept, :image).merge(user_id: current_user.id)
+    params.require(:avatar).permit(:nickname, :email, :password, :encrypted_password, :last_name, :first_name, :last_name_ruby, :first_name_ruby).merge(user_id: current_user.id)
   end
 
   def set_avatar
