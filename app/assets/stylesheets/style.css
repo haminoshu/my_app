@@ -138,18 +138,18 @@ a {
 .form__wrapper{
   min-height: calc(100vh - 161px);
 }
-
 .form__text {
   width: 50%;
 }
 
-.field{
-  margin: 10px 20px;
+.field {
+  margin-left: 550px;
 }
 
-.actions{
+.actions {
+  margin-top: 10px;
   margin-bottom: 40px;
-  margin-left: 20px;
+  margin-left: 550px;
 }
 
 .form__btn{
