@@ -1,9 +1,47 @@
+<header class="header">
+      <div class="inner">
+        <div class="nav">
+          <div class="nav__left">
+            <%= link_to image_tag("rakuraku.png", class: :logo), root_path %>
+            <%= image_tag "logoimage.png", class: :logoimage %>
+          </div>
+          <%# ログインしているときは以下を表示するようにしましょう %>
+            <% if user_signed_in? %>
+            <div class="nav__right">
+              <%= link_to image_tag("logout.png", class: :semilogo), destroy_user_session_path, method: :delete, class: :nav__logout %>
+              <%= link_to image_tag("job.png", class: :semilogo), new_avatar_path, class: :nav__btn %>
+            </div>
+          <%# // ログインしているときは上記を表示するようにしましょう %>
+          <%# ログインしていないときは以下を表示するようにしましょう %>
+            <% else %>
+            <div class="nav__right">
+              <%= link_to image_tag("login.png", class: :semilogo), new_user_session_path, class: :nav__btn %>
+              <%= link_to image_tag("new.png", class: :semilogo), new_user_registration_path, class: :nav__btn %>
+            </div>
+            <% end %>
+          <%# // ログインしていないときは上記を表示するようにしましょう %>
+        </div>
+      </div>
+    </header>
+
 <div class="main">
   <div class="inner">
     <div class="form__wrapper">
-      <h2 class="page-heading">新規プロトタイプ投稿</h2>
+      <div class="page-heading">
+      <%= image_tag("mypage.png", class: :mypage) %>
+      </div>
+      <%= image_tag("annai.png", class: :annai) %>
+       <%= image_tag("donosyokugyou.png", class: :donosyokugyou) %>
+       
+       <div class="new_select">
+       <%= image_tag("slow.png", class: :new_image) %>
+       <%= image_tag("baito.png", class: :new_image) %>
+       <%= image_tag("chef.png", class: :new_image) %>
+       <%= image_tag("nazo.png", class: :new_image) %>
+       </div>
+       <%= image_tag("storywokuriasuruto.png", class: :storywokuriasuruto) %>
         <%# 部分テンプレートでフォームを表示する %>
-        <%= render partial: "avatars/form" %>
+        <%# <%= render partial: "avatars/form" %>
     </div>
   </div>
 </div>

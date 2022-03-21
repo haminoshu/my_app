@@ -54,6 +54,8 @@
         </div>
       </div>
     </header>
+    <% if user_signed_in? %>
+    <% else %>
     <div class="body__image">
     <%= image_tag("topimage.png", class: :topimage) %>
     <%= image_tag("introduce.png", class: :introduce) %>
@@ -78,7 +80,7 @@
     <%= image_tag("naiyou.png", class: :naiyou) %>
     <%= image_tag("saa.png", class: :saa) %>
     </div>
-
+    <% end %>
     <%= yield %>
     <%# <footer class="footer"> %>
       <%# <p class="copyright">Copyright © JUNKO TAKANO All rights reserved.</p> %>

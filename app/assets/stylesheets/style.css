@@ -172,6 +172,39 @@ a {
   cursor: pointer;
 }
 
+.mypage {
+  width: 20%;
+  margin-left: 400px;
+}
+
+.new_select {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new_image {
+  width: 280px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.annai {
+  width: 100px;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+
+.donosyokugyou {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.storywokuriasuruto {
+  margin-left: 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* メイン */
 
 .greeting{

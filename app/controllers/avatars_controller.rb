@@ -4,6 +4,10 @@ class AvatarsController < ApplicationController
 
   def index
     @avatars = Avatar.all
+    
+    if user_signed_in?
+      render :new
+    end
   end
 
   def new
