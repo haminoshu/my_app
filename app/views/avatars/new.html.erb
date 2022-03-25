@@ -34,10 +34,10 @@
        <%= image_tag("donosyokugyou.png", class: :donosyokugyou) %>
        
        <div class="new_select">
-       <%= link_to image_tag("slow.png", class: :new_image), new_user_session_path %>
-       <%= link_to image_tag("baito.png", class: :new_image), new_user_session_path %>
-       <%= link_to image_tag("chef.png", class: :new_image), new_user_session_path %>
-       <%= link_to image_tag("nazo.png", class: :new_image), new_user_session_path %>
+       <%= link_to image_tag("slow.png", class: :new_image), '/users/show' %>
+       <%= link_to image_tag("baito.png", class: :new_image), new_avatar_path %>
+       <%= link_to image_tag("chef.png", class: :new_image), new_avatar_path %>
+       <%= link_to image_tag("nazo.png", class: :new_image), new_avatar_path %>
        </div>
        <%= image_tag("storywokuriasuruto.png", class: :storywokuriasuruto) %>
         <%# 部分テンプレートでフォームを表示する %>

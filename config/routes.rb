@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :avatars do
     resources :comments, only: :create
   end
-  resources :users, only: :show
+  resources :users
+  resources :jobs
 end
