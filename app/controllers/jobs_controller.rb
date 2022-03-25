@@ -4,6 +4,9 @@ class JobsController < ApplicationController
   end
   
   def show
+    render :'/jobs/slow/'
+
   end
+
 
 end

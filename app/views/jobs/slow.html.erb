@@ -1,0 +1,40 @@
+<header class="header">
+      <div class="inner">
+        <div class="nav">
+          <div class="nav__left">
+            <%= link_to image_tag("rakuraku.png", class: :logo), root_path %>
+            <%= image_tag "logoimage.png", class: :logoimage %>
+          </div>
+          <%# ログインしているときは以下を表示するようにしましょう %>
+            <% if user_signed_in? %>
+            <div class="nav__right">
+              <%= link_to image_tag("logout.png", class: :semilogo), destroy_user_session_path, method: :delete, class: :nav__logout %>
+              <%= link_to image_tag("job.png", class: :semilogo), new_avatar_path, class: :nav__btn %>
+            </div>
+          <%# // ログインしているときは上記を表示するようにしましょう %>
+          <%# ログインしていないときは以下を表示するようにしましょう %>
+            <% else %>
+            <div class="nav__right">
+              <%= link_to image_tag("login.png", class: :semilogo), new_user_session_path, class: :nav__btn %>
+              <%= link_to image_tag("new.png", class: :semilogo), new_user_registration_path, class: :nav__btn %>
+            </div>
+            <% end %>
+          <%# // ログインしていないときは上記を表示するようにしましょう %>
+        </div>
+      </div>
+
+    </header>
+  
+      <%= image_tag("slow.png", class: :job_image) %>
+      <div class="slow_story">
+      <h2>「さあ、スローライフの始まりです！」</h2>
+      <h3>あなたは本日からスローライフを始めることにしました。<br>
+      田んぼや畑を耕し、まずは食べ物を作りましょう！<br>
+      あなたはどんな食べ物を作りますか？
+      </h3>
+      <br>
+      <h3><%= link_to "Ａ：じゃがいも", '/jobs/jagaimo/' %><br>
+          <%= link_to "Ｂ：キャベツ", '/jobs/kyabetsu/' %><br>
+          <%= link_to "Ｃ：いっそ何もしない", '/jobs/isso/' %><br>
+      <h3>※選択肢の中から選んで下さい。</h3>
+      </div>

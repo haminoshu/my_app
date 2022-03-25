@@ -22,48 +22,5 @@
           <%# // ログインしていないときは上記を表示するようにしましょう %>
         </div>
       </div>
+
     </header>
-
-<div class="main">
-  <div class="inner">
-    <div class="user__wrapper">
-     
-      <h2 class="page-heading">
-    
-        <%= image_tag("slow.png", class: :show_image) %>
-      </h2>
-      
-      <table class="table">
-        <tbody>
-          <tr>
-            <th class="table__col1">職業名</th>
-            <td class="table__col2">スローライフ</td>
-          </tr>
-
-          <tr>
-            <th class="table__col1">特徴</th>
-            <td class="table__col2">自給自足&のんびりした生活を送りたい人向け</td>
-          </tr>
-          <tr>
-            <th class="table__col1">難易度</th>
-            <td class="table__col2">A</td>
-          </tr>
-          <tr>
-            <%# <th class="table__col1">役職</th> %>
-            <%# <td class="table__col2"><%= @user.position %></td>
-          </tr>
-       
-        </tbody>
-  
-      </table>
-       <%= link_to image_tag("taiken.png", class: :taiken), '/jobs/slow' %>
-      <h2 class="page-heading">
-        <%= @avatar %>
-      </h2>
-      <div class="user__card">
-        <%# 部分テンプレートでそのユーザーが投稿したプロトタイプ投稿一覧を表示する %>
-        <%= render partial: "avatars/avatar", collection: @avatars %>
-      </div>
-    </div>
-  </div>
-</div>
